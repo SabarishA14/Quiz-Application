@@ -5,10 +5,13 @@ import com.sab.quizapp.Model.Response;
 import com.sab.quizapp.Service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Controller
+@RequestMapping("/quiz")
 public class QuizController {
 
     @Autowired
